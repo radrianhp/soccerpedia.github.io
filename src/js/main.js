@@ -1,5 +1,5 @@
-import match from "/src/loader/loadleague.js";
-import db from "/src/js/db.js";
+import match from "./../loader/loadleague.js";
+import db from "./../js/db.js";
 
 // REQUEST API
 document.addEventListener("DOMContentLoaded", function () {
