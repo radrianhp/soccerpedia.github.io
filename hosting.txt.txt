@@ -1,0 +1,2 @@
+FireBase hosting: soccerpedia-5beeb.web.app
+Github : https://robertusadrian.github.io/soccerpedia.github.io/

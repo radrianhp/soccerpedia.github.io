@@ -1,5 +1,6 @@
 {
   "projects": {
-    "SoccerPedia": "soccerpedia-5beeb"
+    "SoccerPedia": "soccerpedia-5beeb",
+    "default": "soccerpedia-5beeb"
   }
 }
