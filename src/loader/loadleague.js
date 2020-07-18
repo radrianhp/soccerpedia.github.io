@@ -1,5 +1,5 @@
-import preloader from "/src/component/preloader.js";
-import db from "/src/js/db.js";
+import preloader from "./../src/component/preloader.js";
+import db from "./../src/js/db.js";
 
 const base_url = "https://api.football-data.org/v2/";
 

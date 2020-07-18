@@ -8,7 +8,7 @@ if ("serviceWorker" in navigator) {
 
 function registerServiceWorker() {
   return navigator.serviceWorker
-    .register("../service-worker.js")
+    .register("./../service-worker.js")
     .then((registration) => {
       console.log(
         "ServiceWorker: Pendaftaran berhasil. Scope:",

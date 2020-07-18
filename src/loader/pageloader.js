@@ -1,4 +1,4 @@
-import league from "./loadleague.js";
+import league from "./../loadleague.js";
 
 const loadPage = (page) => {
   let xhttp = new XMLHttpRequest();
