@@ -17,6 +17,9 @@ const saveForLater = (data) => {
           resolve(true);
           M.toast({
             html: `Club have been saved.`,
+            completeCallback: () => {
+              location.href = "./#clubs";
+            },
           });
         } else {
           reject(new Error(transaction.onerror));
