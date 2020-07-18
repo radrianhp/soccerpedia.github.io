@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Find your football information with SoccerPedia | Update Match and Scorers "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./src/styles/materialize.min.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+
+    <!-- Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./src/image/icons/icon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="./src/image/icons/apple-touch-icon.png"
+    />
+
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="orange" />
+
+    <title>SoccerPedia | Live Score, Standings, Team Info</title>
+  </head>
+  <header>
+    <header-bar></header-bar>
+  </header>
+  <body>
+    <main>
+      <div class="container">
+        <div id="body-content" class="col s12"></div>
+      </div>
+    </main>
+
+    <footer-bar></footer-bar>
+
+    <!-- script -->
+    <script src="./src/js/materialize.min.js"></script>
+    <script src="./src/component/header-bar.js"></script>
+    <script src="./src/component/footer-bar.js"></script>
+
+    <script src="./src/js/register.js"></script>
+    <script src="./src/js/idb.js"></script>
+
+    <script type="module" src="./src/loader/loader.js"></script>
+  </body>
+</html>
