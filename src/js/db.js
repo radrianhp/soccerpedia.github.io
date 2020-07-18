@@ -89,7 +89,7 @@ const deleteForSaved = (data) => {
           M.toast({
             html: `Club have been deleted.`,
             completeCallback: () => {
-              location.href = "/#saved";
+              location.href = "./#saved";
             },
           });
           resolve(true);
