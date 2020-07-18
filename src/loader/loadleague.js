@@ -108,15 +108,6 @@ const getMatchesFinish = () => {
         if (response) {
           response.json().then(function (data) {
             loadMatchesList(data);
-            document
-              .querySelectorAll(".match-item[id]")
-              .forEach((matchCard) => {
-                matchCard.addEventListener("click", () => {
-                  window.location.href = `${
-                    window.location.origin
-                  }./detail.html?id=${matchCard.getAttribute("id")}`;
-                });
-              });
           });
           isCached = true;
         }
@@ -127,13 +118,6 @@ const getMatchesFinish = () => {
     .then(json)
     .then(function (data) {
       loadMatchesList(data);
-      document.querySelectorAll(".match-item[id]").forEach((matchCard) => {
-        matchCard.addEventListener("click", () => {
-          window.location.href = `${
-            window.location.origin
-          }/detail.html?id=${matchCard.getAttribute("id")}`;
-        });
-      });
     })
     .catch(() => {
       if (isCached === false) {
@@ -546,7 +530,7 @@ const loadMatchesSchedule = (data) => {
           <div class="card-image">
             <img src="./src/image/stadium.jpg" alt="${table.matchday}">
               <span class="card-title">MatchDay- ${table.matchday}</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="detail.html?id=${
+                <a class="btn-floating halfway-fab waves-effect waves-light red" href="./detail.html?id=${
                   table.id
                 }"><i class="material-icons">description</i></a>
           </div>
@@ -578,7 +562,8 @@ const loadMatchesList = (data) => {
   data.matches.forEach((table) => {
     matchesHtml += `
       <div class="col s12 m6">
-        <div class="card waves-effect waves-yellow match-item" id="${table.id}">        
+        <div class="card waves-effect waves-yellow match-item" id="${table.id}"> 
+        <a class="waves-effect waves-light" href="./detail.html?id=${table.id}">       
           <div class="card-image">
             <img src="./src/image/stadium.jpg" alt="${table.matchday}">
             <span class="card-title">MatchDay- ${table.matchday}</span>
@@ -589,6 +574,7 @@ const loadMatchesList = (data) => {
               <li class="collection-item">${table.awayTeam.name}<p class="secondary-content">${table.score.fullTime.awayTeam}</p></li>
             </ul>
           </div>
+        </a>
         </div>
       </div>
             `;
