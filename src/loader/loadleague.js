@@ -114,7 +114,7 @@ const getMatchesFinish = () => {
                 matchCard.addEventListener("click", () => {
                   window.location.href = `${
                     window.location.origin
-                  }/detail.html?id=${matchCard.getAttribute("id")}`;
+                  }./detail.html?id=${matchCard.getAttribute("id")}`;
                 });
               });
           });
