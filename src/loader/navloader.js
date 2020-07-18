@@ -1,4 +1,4 @@
-import loadPage from "./../pageloader.js";
+import loadPage from "./pageloader.js";
 
 const loadNav = () => {
   const xhttp = new XMLHttpRequest();

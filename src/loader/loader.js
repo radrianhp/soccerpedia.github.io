@@ -1,5 +1,5 @@
-import loadNav from "./../navloader.js";
-import loadPage from "./../pageloader.js";
+import loadNav from "././navloader.js";
+import loadPage from "././pageloader.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   // Activate sidebar nav
