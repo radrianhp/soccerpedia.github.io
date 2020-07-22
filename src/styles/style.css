@@ -6,8 +6,13 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
+main {
+  flex: 1 0 auto;
+}
 .icon {
   margin: 0;
   padding: 0;
@@ -32,9 +37,7 @@ body {
     margin: 0;
   }
   .icon {
-    width: 10px;
-    height: 10px;
-    background-size: 10px 10px;
+    display: hidden;
   }
   .club-logo {
     height: 20px;
