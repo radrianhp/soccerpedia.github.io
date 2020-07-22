@@ -7,7 +7,7 @@ class HeaderBar extends HTMLElement {
     this.innerHTML = `        
     <nav class="orange" role="navigation">
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo"><i class="icon"></i>SoccerPedia</a>
+        <a href="#" class="brand-logo"><i class="icon hide-on-med-and-down"></i>SoccerPedia</a>
         <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
 
         <ul class="topnav right hide-on-med-and-down"></ul>

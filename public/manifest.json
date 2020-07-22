@@ -5,8 +5,8 @@
   "description": "Media Olahraga | Update Scores, Update Match, Update Club",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "orange",
-  "theme_color": "orange",
+  "background_color": "#e9b71f",
+  "theme_color": "#e9b71f",
   "icons": [
     {
       "src": "src/image/icons/icon.png",

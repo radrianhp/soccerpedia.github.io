@@ -11,6 +11,7 @@ workbox.precaching.precacheAndRoute(
     { url: "/manifest.json", revision: "1" },
     { url: "/index.html", revision: "1" },
     { url: "/detail.html", revision: "1" },
+    { url: "/club-detail.html", revision: "1" },
     { url: "/src/js/main.js", revision: "1" },
     { url: "/src/js/materialize.min.js", revision: "1" },
     { url: "/src/js/idb.js", revision: "1" },
@@ -56,6 +57,12 @@ workbox.routing.registerRoute(
   /^https:\/\/upload\.wikimedia\.org/,
   workbox.strategies.cacheFirst({
     cacheName: "club-logo",
+  })
+);
+workbox.routing.registerRoute(
+  /^https:\/\/fonts\.googleapis\.com/,
+  workbox.strategies.cacheFirst({
+    cacheName: "font-style",
   })
 );
 
